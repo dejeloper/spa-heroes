@@ -1,0 +1,18 @@
+<div class="col h-100 animated fadeIn">
+  <div class="card h-100">
+    <img [src]="heroe.img" class="card-img-top" [alt]="heroe.nombre" [title]="heroe.nombre">
+    <div class="card-body">
+      <h5 class="card-title">{{ heroe.nombre }}</h5>
+      <p class="card-text">{{ heroe.bio }}</p>
+      <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+    </div>
+
+    <div class="d-grid gap-1 m-3">
+      <button type="button" (click)="verHeroe()" class="btn btn-outline-primary btn-block">
+        Ver más...
+      </button>
+
+    </div>
+
+  </div>
+</div>
